@@ -1,6 +1,21 @@
 # Weather App
 
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![OpenWeatherMap](https://img.shields.io/badge/API-OpenWeatherMap-blue)](https://openweathermap.org/api)
+
 A simple command-line tool that fetches current weather data for any location and outputs it in JSON format.
+
+## Features
+
+- 🌦️ Get current weather data for any location
+- 📊 Output data in clean, structured JSON format
+- ⚙️ Configurable units (metric/imperial)
+- 💾 Save output to a file or print to console
+- 🚀 Lightweight and easy to use
+- 🛠️ Well-tested with pytest
+- 📝 Comprehensive error handling
 
 ## Features
 
