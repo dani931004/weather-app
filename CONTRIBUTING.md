@@ -30,7 +30,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 1. **Fork the Repository**:
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/dani931004/weather-app.git
    cd weather-app
    ```
 
@@ -89,7 +89,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/dani931004/weather-app.git
    cd weather-app
    ```
 

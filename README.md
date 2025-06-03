@@ -29,7 +29,7 @@ A simple command-line tool that fetches current weather data for any location an
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/dani931004/weather-app.git
    cd weather-app
    ```
 
