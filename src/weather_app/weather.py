@@ -147,7 +147,7 @@ class WeatherClient:
         status_code_int = int(status_code) if isinstance(status_code, str) else status_code
         
         if status_code_int == 401:
-            raise exceptions.InvalidAPIKeyError(status_code_int, message)
+            raise exceptions.InvalidAPIKeyError(f"Invalid API key: {message}")
         elif status_code_int == 404:
             raise exceptions.LocationNotFoundError(f"Location not found: {message}")
         elif status_code_int == 429:

@@ -13,7 +13,8 @@ class APIError(WeatherAppError):
 
 class InvalidAPIKeyError(APIError):
     """Raised when the provided API key is invalid."""
-    pass
+    def __init__(self, message: str):
+        super().__init__(status_code=401, message=message)
 
 class LocationNotFoundError(WeatherAppError):
     """Raised when the requested location is not found."""

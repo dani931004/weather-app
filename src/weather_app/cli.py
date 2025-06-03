@@ -3,12 +3,10 @@ Weather App - Command Line Interface
 
 A simple CLI to fetch weather data from OpenWeatherMap API.
 """
-import json
-import os
-import sys
 from datetime import datetime
-from pathlib import Path
-from typing import Optional, Dict, Any
+import json
+import sys
+from typing import Any, Dict, Optional
 
 import click
 from dotenv import load_dotenv
@@ -29,8 +27,8 @@ def format_weather_data(weather_data: WeatherResponse, units: str) -> Dict[str, 
             'city': weather_data.name,
             'country': weather_data.sys.country,
             'coordinates': {
-                'lat': weather_data.coord.lat,
-                'lon': weather_data.coord.lon
+                'lat': weather_data.coord['lat'],
+                'lon': weather_data.coord['lon']
             }
         },
         'weather': {
@@ -133,10 +131,6 @@ def get(location: str, country: Optional[str], units: str,
     except Exception as e:
         click.secho(f"Unexpected error: {str(e)}", fg='red', err=True)
         sys.exit(1)
-    
-    click.secho("\n✅ Setup complete!", fg='green')
-    click.echo("You can now use the weather app. Try running:")
-    click.echo("  weather get london")
 
 if __name__ == '__main__':
     cli()
